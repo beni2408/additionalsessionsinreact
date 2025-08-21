@@ -19,6 +19,8 @@ export default function App() {
   );
 }
 
+// memoize
+
 const Counter1 = memo(({ count }) => {
   console.log("counter 1 redered");
   return <div>Count1 : {count}</div>;
@@ -27,3 +29,11 @@ const Counter2 = memo(({ count }) => {
   console.log("counter 2 redered");
   return <div>Count2 : {count}</div>;
 });
+
+//diff use concepts
+//usestate
+//useMemo - only changed when the dependency or within that component things changed
+//usecallback
+//use Reducer (dispatch)
+// React.memo
+//Use Reference (wont rerender)
